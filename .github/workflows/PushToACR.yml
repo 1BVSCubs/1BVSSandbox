@@ -18,6 +18,7 @@ jobs:
         login-server: ${{secrets.REGISTRY_NAME}}
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
+    - name: Build Image
       env:
         ACR_REGISTRY: ${{secrets.REGISTRY_NAME}}
         ACR_REPOSITORY: 1bvssandbox
