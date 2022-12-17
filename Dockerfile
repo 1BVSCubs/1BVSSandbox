@@ -13,8 +13,8 @@ COPY requirements.txt /usr/src/app/
 RUN pip3 install --no-cache-dir -r /usr/src/app/requirements.txt
 
 COPY app/*.py /usr/src/app/app/
-COPY app/static/ /usr/sr/app/static/
-COPY app/templates/ /usr/src/app/templates/
+COPY app/static/ /usr/sr/app/app/static/
+COPY app/templates/ /usr/src/app/app/templates/
 COPY *.py /usr/src/app/
 
 CMD /usr/bin/python3 /usr/src/app/run.py
